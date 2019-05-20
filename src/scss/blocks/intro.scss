@@ -1,12 +1,92 @@
 .intro {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  margin-bottom: 150px;
 }
 
 .intro__title {
+  text-align: center;
   color: #fff;
   font-size: 200px;
   font-weight: 700;
+  line-height: 1;
+}
+
+.intro__icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.intro__icon-network {
+  top: 58%;
+  left: 1%;
+}
+
+.intro__icon-world {
+  top: 31%;
+  left: 6.5%;
+}
+
+.intro__icon-mobile {
+  top: 21%;
+  left: 14%;
+}
+
+.intro__icon-twitter {
+  top: 68%;
+  left: 20%;
+}
+
+.intro__icon-folder {
+  top: 64%;
+  left: 30%;
+}
+
+.intro__icon-github {
+  top: 23%;
+  left: 31%;
+}
+
+.intro__icon-like {
+  top: 30%;
+  left: 38.5%;
+}
+
+.intro__icon-robot {
+  top: 10%;
+  left: 42%;
+}
+
+.intro__icon-cart {
+  top: 74%;
+  left: 49%;
+}
+
+.intro__icon-telegram {
+  top: 25%;
+  left: 57%;
+}
+
+.intro__icon-letter {
+  top: 65%;
+  left: 59%;
+}
+
+.intro__icon-cup {
+  top: 13%;
+  left: 69%;
+}
+
+.intro__icon-google {
+  top: 80%;
+  left: 75%;
+}
+
+.intro__icon-facebook {
+  top: 25%;
+  left: 80%;
 }

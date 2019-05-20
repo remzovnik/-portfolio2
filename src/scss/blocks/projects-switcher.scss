@@ -1,0 +1,31 @@
+.projects-switcher {
+  display: flex;
+}
+
+.projects-switcher__titles {
+  @include reset-list;
+  flex-basis: 235px;
+  margin-right: 45px;
+}
+
+.projects-switcher__item {
+  margin-bottom: 40px;
+  &.uk-active .projects-switcher__title {
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.25s;
+  }
+}
+
+.projects-switcher__title {
+  @include reset-btn;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.25);
+  transition: color 0.25s;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.projects-switcher__projects {
+  @include reset-list;
+  flex-grow: 1;
+}

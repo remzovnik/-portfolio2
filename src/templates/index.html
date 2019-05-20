@@ -11,15 +11,244 @@
 
 <body class="page">
   <div class="page-wrapper">
+    <button class="btn-menu js-btn-menu" data-uk-toggle="target: .js-btn-menu, .js-menu; cls: active">
+      <span class="btn-menu__line btn-menu__line-1"></span>
+      <span class="btn-menu__line btn-menu__line-2"></span>
+      <span class="btn-menu__line btn-menu__line-3"></span>
+    </button>
+    <nav class="menu js-menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#" data-uk-scroll>
+            Обо мне
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" data-uk-scroll>
+            Мои работы
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" data-uk-scroll>
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
     <header class="intro">
-      <div class="intro__title">Hello, world!</div>
-      <div class="intro__icon-network">
-
+      <div class="uk-container">
+        <h1 class="intro__title">Hello, World!</h1>
+        <svg class="intro__icon intro__icon-network js-icon-network">
+          <use xlink:href="../img/sprite.svg#icon-network" />
+        </svg>
+        <svg class="intro__icon intro__icon-world js-icon-world">
+          <use xlink:href="../img/sprite.svg#icon-world" />
+        </svg>
+        <svg class="intro__icon intro__icon-mobile js-icon-mobile">
+          <use xlink:href="../img/sprite.svg#icon-mobile" />
+        </svg>
+        <svg class="intro__icon intro__icon-twitter js-icon-twitter">
+          <use xlink:href="../img/sprite.svg#icon-twitter" />
+        </svg>
+        <svg class="intro__icon intro__icon-folder js-icon-folder">
+          <use xlink:href="../img/sprite.svg#icon-folder" />
+        </svg>
+        <svg class="intro__icon intro__icon-github js-icon-github">
+          <use xlink:href="../img/sprite.svg#icon-github" />
+        </svg>
+        <svg class="intro__icon intro__icon-like js-icon-like">
+          <use xlink:href="../img/sprite.svg#icon-like" />
+        </svg>
+        <svg class="intro__icon intro__icon-robot js-icon-robot">
+          <use xlink:href="../img/sprite.svg#icon-robot" />
+        </svg>
+        <svg class="intro__icon intro__icon-cart js-icon-cart">
+          <use xlink:href="../img/sprite.svg#icon-cart" />
+        </svg>
+        <svg class="intro__icon intro__icon-telegram js-icon-telegram">
+          <use xlink:href="../img/sprite.svg#icon-telegram" />
+        </svg>
+        <svg class="intro__icon intro__icon-letter js-icon-letter">
+          <use xlink:href="../img/sprite.svg#icon-letter" />
+        </svg>
+        <svg class="intro__icon intro__icon-cup js-icon-cup">
+          <use xlink:href="../img/sprite.svg#icon-cup" />
+        </svg>
+        <svg class="intro__icon intro__icon-google js-icon-google">
+          <use xlink:href="../img/sprite.svg#icon-google" />
+        </svg>
+        <svg class="intro__icon intro__icon-facebook js-icon-facebook">
+          <use xlink:href="../img/sprite.svg#icon-facebook" />
+        </svg>
       </div>
     </header>
-
+    <section class="about">
+      <div class="uk-container">
+        <div class="about__inner">
+          <div class="about__face">
+            <img class="about__serious-photo" src="../img/face.png" alt="My serious face">
+            <img class="about__fun-photo" src="../img/face.png" alt="My fun face">
+            <img class="about__bubble" src="../img/xoxo.svg" alt="hoho">
+          </div>
+          <div>
+            <h2 class="about__section-title section-title">
+              Обо мне
+              <img class="about__wild&free" src="../img/wild&free.svg" alt="Wild and free">
+            </h2>
+            <div class="about__text">
+              <p>
+                Меня зовут Никита. Верстаю сайты
+                <span class="about__love" data-uk-tooltip="title: Кроссбраузерно, валидно, адаптивно!">
+                  with love
+                </span>
+                <svg class="about__icon-heart">
+                  <use xlink:href="../img/sprite.svg#icon-heart" /></svg>
+                <br>
+                Для этого использую голову, руки и сердце.
+              </p>
+              <p>
+                А также:
+                HTML5, CSS3, JS, SASS, SVG, UIkit , Bootstrap, Git, Webpack, GSAP и немного Vue
+              </p>
+              <p>
+                А ещё я люблю анимации...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="uk-container uk-container-large">
+        <h2 class="projects__section-title section-title">
+          Мои недавние проекты
+          <img src="../img/hot.svg" alt="hot">
+        </h2>
+        <div class="projects-switcher">
+          <ul class="projects-switcher__titles" data-uk-switcher="animation: uk-animation-fade">
+            <li class="projects-switcher__item">
+              <button class="projects-switcher__title" type="button">
+                Интернет-магазин
+                чулочно-носочных изделий
+              </button>
+            </li>
+            <li class="projects-switcher__item">
+              <button class="projects-switcher__title" type="button">
+                Сайт по продаже цветов
+              </button>
+            <li class="projects-switcher__item">
+              <button class="projects-switcher__title" type="button">
+                Корпоративный сайт
+                веб-студии
+              </button>
+            </li>
+            <li class="projects-switcher__item">
+              <button class="projects-switcher__title" type="button">
+                Сайт по продаже кухонь
+              </button>
+            <li class="projects-switcher__item">
+              <button class="projects-switcher__title" type="button">
+                Корпоративный сайт
+                смм
+              </button>
+            </li>
+            <li class="projects-switcher__item">
+              <button class="projects-switcher__title" type="button">
+                Авсвеб солютионс
+              </button>
+          </ul>
+          <ul class="projects-switcher__projects uk-switcher">
+            <li class="projects-switcher__project-item">
+              <div class="project">
+                <div class="project__img uk-cover-container js-project-img-wrapper">
+                  <img class="js-project-img" data-uk-cover src="../img/harold-project.jpg">
+                </div>
+                <a class="project__link" href="#">
+                  <h3 class="project__title">
+                    Collant.love.ru
+                  </h3>
+                  <span class="project__link-decor">
+                    <svg class="project__link-arrow" viewBox="0 0 192 70">
+                      <path
+                        d="M9.208,30.983 L170.734,30.983 L154.536,14.739 C153.743,13.946 153.308,12.872 153.308,11.744 C153.308,10.616 153.743,9.549 154.536,8.755 L157.057,6.231 C157.849,5.438 158.905,4.999 160.032,4.999 C161.158,4.999 162.215,5.435 163.008,6.228 L190.774,34.010 C191.570,34.807 192.005,35.867 192.002,36.995 C192.005,38.130 191.570,39.191 190.774,39.986 L163.008,67.771 C162.215,68.563 161.159,68.999 160.032,68.999 C158.905,68.999 157.849,68.563 157.057,67.771 L154.536,65.248 C153.743,64.456 153.308,63.398 153.308,62.271 C153.308,61.144 153.743,60.142 154.536,59.349 L170.917,43.014 L9.271,43.014 C6.950,43.014 5.000,41.013 5.000,38.692 L5.000,35.123 C5.000,32.802 7.008,30.957 9.328,30.957 " />
+                    </svg>
+                    <img src="../img/eye.svg">
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li class="projects-switcher__project-item">
+              Сайт по продаже цветов
+            </li>
+            <li class="projects-switcher__project-item">
+              Корпоративный сайт
+              веб-студии
+            </li>
+            <li class="projects-switcher__project-item">
+              Сайт по продаже кухонь
+            </li>
+            <li class="projects-switcher__project-item">
+              Корпоративный сайт
+              смм
+            </li>
+            <li class="projects-switcher__project-item">
+              Авсвеб солютионс
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="uk-container">
+        <h2 class="contacts__section-title section-title">
+          Есть работа?
+          <img class="contacts__yeah" src="../img/yeah.svg">
+        </h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+79515482773">
+              <span class="contacts__tag">&lt;tel&gt;</span>
+              +79515482773
+              <span class="contacts__tag">&lt;/tel&gt;</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:remzovnik@gmail.com">
+              <span class="contacts__tag">&lt;email&gt;</span>
+              remzovnik@gmail.com
+              <span class="contacts__tag">&lt;/email&gt;</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="https://github.com/remzov?tab=repositories">
+              <span class="contacts__tag">&lt;github&gt;</span>
+              remzov
+              <span class="contacts__tag">&lt;/github&gt;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <a class="restart" href="#" data-uk-scroll>
+      <svg class="restart__circle" viewBox="0 0 171 159">
+        <defs>
+          <path id="restart-circle"
+            d="M83.5,26c29.7,0.4,57.7,23.9,59,55c1.4,32.6-27.2,59.4-59,60c-31.3,0.6-60.7-24.4-61-57C22.2,50.9,52.2,25.6,83.5,26z" />
+        </defs>
+        <text class="restart__circle-text" textLength="360">
+          <textPath xlink:href="#restart-circle">Смотреть ещё разок <tspan class="restart__arrow">→</tspan>
+          </textPath>
+        </text>
+      </svg>
+      <svg class="restart__go" viewBox="0 0 79.031 45">
+        <path
+          d="M961.085,3542.39c-2.112-6.29-10.227-9.67-16.3-9.38-7.088.34-14.283,5.49-17.94,11.56-3.7,6.14-5.092,14.9-2.616,21.73,2.764,7.64,9.7,10.91,17.34,10.59,7.477-.32,18.176-5.04,17.965-14.22a0.405,0.405,0,0,0-.783-0.17c-1.77,4.27-3.765,7.91-7.892,10.21a21.979,21.979,0,0,1-12.88,2.42c-10.206-1.07-14.552-10.4-13.094-20.04,1.267-8.4,6.006-15.24,13.628-18.83,7.532-3.56,17.6-1.07,22.062,6.38a0.284,0.284,0,0,0,.509-0.25h0Zm-0.367-.11a41.176,41.176,0,0,0-5.221,3.69c0.321,0.06.642,0.13,0.964,0.19-1.692-4.86-9.9-5.54-13.872-4.12-5.843,2.09-9.787,8.43-10.38,14.49-0.6,6.2,2.663,11.83,9.141,12.36,5.524,0.45,10.228-3.31,11.856-8.56a0.872,0.872,0,0,0-1.641-.59c-1.361,4.4-5.059,7.54-9.678,7.44-6.462-.14-8.851-5.76-8.042-11.5a16.269,16.269,0,0,1,7.686-11.47,11.214,11.214,0,0,1,6.626-1.27c2.256,0.22,6.252,1.22,7.191,3.79a0.62,0.62,0,0,0,.964.19,40.331,40.331,0,0,0,4.684-4.21c0.184-.2,0-0.58-0.278-0.43h0Zm-8.579,16.73c-1.432-.58-2.824-0.09-4.285-0.3-1.16-.16-1.132.55-1.474-1.11a22.105,22.105,0,0,1,.021-2.45l-0.627.96a39.2,39.2,0,0,1,14.113.6c3.133,0.77,2.943,2.74,2.969,5.57,0.019,2.21.058,4.41-.015,6.61,0.3-.27.6-0.53,0.895-0.8-0.824.04-1.608-.06-2.43-0.1-1.151-.06-1.084.25-1.424-0.72-0.412-1.18.126-3.01-.084-4.32a0.671,0.671,0,0,0-1.29-.09c-0.294,1.36-1.082,5.17-.123,6.32,1,1.19,3.928.69,5.233,0.62a0.854,0.854,0,0,0,.894-0.79c0.084-3.13-.077-6.25-0.039-9.37,0.025-2.03.22-2.76-1.595-3.68-2.452-1.26-5.481-1.39-8.153-1.58a42.869,42.869,0,0,0-9.269.13,0.837,0.837,0,0,0-.626.96c0.119,1.57-.622,3.98,1.172,4.78,1.325,0.59,4.805-.1,6.086-0.51a0.386,0.386,0,0,0,.051-0.73h0Zm24.68-21.87c-7.612,2.25-9.625,12.58-9.694,19.56-0.094,9.21,4.352,18.44,13.656,20.81a16.684,16.684,0,0,0,19.819-11.48c2.81-9.14,1.75-21.63-6.247-27.7-7.575-5.75-19.561-4.62-23.772,4.66-0.215.47,0.462,0.74,0.743,0.39,3.175-3.97,7.33-6.66,12.457-6.69a15.813,15.813,0,0,1,12.929,6.77c3.39,4.86,3.58,11.52,3,17.26-0.563,5.57-2.838,10.54-7.73,13.39-9.689,5.64-20.477-1.51-22.587-11.87-1.737-8.52-.011-19.64,7.577-24.65,0.2-.13.128-0.53-0.149-0.45h0Zm9.271,5.41c-7.394-3.44-11.113,7.67-11,13.54,0.115,6.15,3.387,15.05,10.8,14.58,6.595-.41,8.292-12.06,7.446-17.13-0.938-5.62-5.094-14.17-11.868-11.43a0.765,0.765,0,0,0,.275,1.43c2.91-.03,4.745-0.1,6.629,2.79a21.1,21.1,0,0,1,2.928,6.55,17.291,17.291,0,0,1-.3,8.48c-0.62,2.29-1.936,6.68-4.574,7.35-6.448,1.65-9.4-7.7-9.54-12.49a17.962,17.962,0,0,1,1.584-7.63,14.672,14.672,0,0,1,1.97-3.55c1.813-2.16,3.156-2.16,5.523-1.87,0.371,0.04.429-.48,0.126-0.62h0Z"
+          transform="translate(-922.969 -3533)" />
+      </svg>
+    </a>
   </div>
 </body>
-<script src="../bundle.js"></script>
+<script src="../bundle.js">
+</script>
 
 </html>

@@ -1,11 +1,15 @@
 // 1. Your custom variables and variable overwrites.
-@import "variables";
+$global-font-family: 'Gilroy', sans-serif;
 
-$global-font-family: $font-base;
+//tooltip
+$tooltip-max-width: 250px;
+$tooltip-background: #939aa2;
+$tooltip-color: #131313;
+$tooltip-border-radius: 10px;
 
 // 2. Import default variables and available mixins.
-@import "uikit/src/scss/variables-theme.scss";
-@import "uikit/src/scss/mixins-theme.scss";
+@import 'uikit/src/scss/variables-theme.scss';
+@import 'uikit/src/scss/mixins-theme.scss';
 
 // 3. Your custom mixin overwrites.
 
@@ -13,9 +17,9 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/uikit-theme.scss";
 
 // Base
-@import "uikit/src/scss/components/variables.scss";
-@import "uikit/src/scss/components/mixin.scss";
-@import "uikit/src/scss/components/base.scss";
+@import 'uikit/src/scss/components/variables.scss';
+@import 'uikit/src/scss/components/mixin.scss';
+@import 'uikit/src/scss/components/base.scss';
 
 // // Elements
 // @import "uikit/src/scss/components/link.scss";
@@ -31,7 +35,7 @@ $global-font-family: $font-base;
 
 // Layout
 // @import "uikit/src/scss/components/section.scss";
-@import "uikit/src/scss/components/container.scss";
+@import 'uikit/src/scss/components/container.scss';
 // @import "uikit/src/scss/components/grid.scss";
 // @import "uikit/src/scss/components/tile.scss";
 // @import "uikit/src/scss/components/card.scss";
@@ -70,7 +74,7 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/components/slider.scss";
 // @import "uikit/src/scss/components/sticky.scss";
 // @import "uikit/src/scss/components/offcanvas.scss";
-// @import "uikit/src/scss/components/switcher.scss";
+@import 'uikit/src/scss/components/switcher.scss';
 // @import "uikit/src/scss/components/heading.scss";
 // // Scrollspy
 // Toggle
@@ -79,19 +83,19 @@ $global-font-family: $font-base;
 // Additional
 // @import "uikit/src/scss/components/iconnav.scss";
 // @import "uikit/src/scss/components/notification.scss";
-// @import "uikit/src/scss/components/tooltip.scss";
+@import 'uikit/src/scss/components/tooltip.scss';
 // @import "uikit/src/scss/components/placeholder.scss";
 // @import "uikit/src/scss/components/progress.scss";
 // @import "uikit/src/scss/components/sortable.scss";
 // @import "uikit/src/scss/components/countdown.scss";
 
 // Utilities
-// @import "uikit/src/scss/components/animation.scss";
+@import 'uikit/src/scss/components/animation.scss';
 // @import "uikit/src/scss/components/width.scss";
 // @import "uikit/src/scss/components/height.scss";
 // @import "uikit/src/scss/components/text.scss";
 // @import "uikit/src/scss/components/column.scss";
-// @import "uikit/src/scss/components/cover.scss";
+@import 'uikit/src/scss/components/cover.scss';
 // @import "uikit/src/scss/components/background.scss";
 // @import "uikit/src/scss/components/align.scss";
 // @import "uikit/src/scss/components/svg.scss";

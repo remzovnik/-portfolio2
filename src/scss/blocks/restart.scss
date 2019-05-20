@@ -1,0 +1,39 @@
+.restart {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.restart__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 165px;
+  height: 160px;
+  // animation: rotating 8s infinite linear;
+}
+
+.restart__circle-text {
+  fill: #fff;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 1;
+  kerning: 100;
+}
+
+.restart__go {
+  width: 80px;
+  height: 45px;
+  stroke: #47ffe7;
+}
+
+.restart__arrow {
+  fill: #fcff40;
+}

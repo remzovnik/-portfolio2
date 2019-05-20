@@ -1,0 +1,38 @@
+.btn-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+  clip-path: circle(60% at 50% 0%);
+  cursor: pointer;
+  &.active {
+  }
+}
+
+.btn-menu__line {
+  width: 36px;
+  height: 5px;
+  background-color: #131313;
+}
+
+.btn-menu__line-1 {
+  position: absolute;
+  top: 5px;
+  left: 30px;
+}
+
+.btn-menu__line-2 {
+  position: absolute;
+  top: 13px;
+  left: 30px;
+}
+
+.btn-menu__line-3 {
+  position: absolute;
+  top: 21px;
+  left: 30px;
+}

@@ -1,0 +1,31 @@
+.contacts {
+  margin-bottom: 160px;
+}
+
+.contacts__section-title {
+  margin-bottom: 95px;
+  text-align: center;
+}
+
+.contacts__list {
+  @include reset-list;
+  margin-left: 30%;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+}
+
+.contacts__link {
+  @include reset-link;
+  color: #fff;
+  font-size: 18px;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.contacts__tag {
+  color: #c62336;
+  font-size: 18px;
+}
