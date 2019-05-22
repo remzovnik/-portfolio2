@@ -13,12 +13,6 @@
       }
     });
 
-    element.addEventListener('click', () => {
-      element.querySelector('.js-project-img').style.clipPath = '';
-      element.querySelector('.js-project-img').classList.add('opened');
-      element.opened = true;
-    });
-
     element.addEventListener('mouseleave', () => {
       if (element.opened !== true) {
         element.querySelector(

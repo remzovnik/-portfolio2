@@ -17,7 +17,7 @@
   left: 0;
   width: 165px;
   height: 160px;
-  // animation: rotating 8s infinite linear;
+  animation: rotating 8s infinite linear;
 }
 
 .restart__circle-text {
@@ -32,6 +32,8 @@
   width: 80px;
   height: 45px;
   stroke: #47ffe7;
+  fill: transparent;
+  stroke-dasharray: 500;
 }
 
 .restart__arrow {

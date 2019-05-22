@@ -1,4 +1,5 @@
 .project {
+  @include reset-link;
   display: flex;
   align-items: center;
 }
@@ -15,9 +16,6 @@
 .project__img {
   clip-path: circle(35% at 50% 50%);
   transition: clip-path 0.25s;
-  &.opened {
-    animation: opened-circle ease-out 0.5s forwards;
-  }
 }
 
 .project__link {
