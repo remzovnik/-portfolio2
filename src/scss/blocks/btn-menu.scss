@@ -1,4 +1,5 @@
 .btn-menu {
+  @include reset-btn;
   position: fixed;
   top: 0;
   left: 50%;

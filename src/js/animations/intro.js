@@ -9,13 +9,18 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
     var introIconsTween = new TimelineMax();
 
     introIconsTween
-      .addLabel('group-1')
-      .from(document.querySelector('.js-icon-network'), 1, {
-        ease: Expo.easeOut,
-        x: -400,
-        y: 300,
-        opacity: 0,
-      })
+      .addLabel('start')
+      .from(
+        document.querySelector('.js-icon-network'),
+        1,
+        {
+          ease: Expo.easeOut,
+          x: -400,
+          y: 300,
+          opacity: 0,
+        },
+        'start += 0.1'
+      )
       .from(
         document.querySelector('.js-icon-world'),
         1,
@@ -25,7 +30,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: 100,
           opacity: 0,
         },
-        'group-1'
+        'start += 0.2'
       )
       .from(
         document.querySelector('.js-icon-mobile'),
@@ -36,7 +41,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: -100,
           opacity: 0,
         },
-        'group-1'
+        'start += 0.1'
       )
       .from(
         document.querySelector('.js-icon-twitter'),
@@ -47,7 +52,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: 400,
           opacity: 0,
         },
-        'group-1'
+        'start +=0.2'
       )
       .from(
         document.querySelector('.js-icon-folder'),
@@ -58,9 +63,8 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: 400,
           opacity: 0,
         },
-        'group-1'
+        'start +=0.1'
       )
-      .addLabel('group-2')
       .from(
         document.querySelector('.js-icon-github'),
         1,
@@ -70,7 +74,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: -400,
           opacity: 0,
         },
-        'group-2'
+        'start += 0.1'
       )
       .from(
         document.querySelector('.js-icon-like'),
@@ -81,7 +85,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: -400,
           opacity: 0,
         },
-        'group-2'
+        'start += 0.2'
       )
       .from(
         document.querySelector('.js-icon-robot'),
@@ -92,7 +96,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: -400,
           opacity: 0,
         },
-        'group-2'
+        'start += 0.3'
       )
       .from(
         document.querySelector('.js-icon-cart'),
@@ -103,7 +107,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: 400,
           opacity: 0,
         },
-        'group-2'
+        'start += 0.1'
       )
       .addLabel('group-3')
       .from(
@@ -115,7 +119,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: -400,
           opacity: 0,
         },
-        'group-3'
+        'start += 0.2'
       )
       .from(
         document.querySelector('.js-icon-letter'),
@@ -126,7 +130,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: 400,
           opacity: 0,
         },
-        'group-3'
+        'start += 0.4'
       )
       .from(
         document.querySelector('.js-icon-cup'),
@@ -137,7 +141,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: -400,
           opacity: 0,
         },
-        'group-3'
+        'start += 0.3'
       )
       .from(
         document.querySelector('.js-icon-google'),
@@ -148,7 +152,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: 400,
           opacity: 0,
         },
-        'group-3'
+        'start += 0.5'
       )
       .from(
         document.querySelector('.js-icon-facebook'),
@@ -159,7 +163,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           y: 200,
           opacity: 0,
         },
-        'group-3'
+        'start += 0.2'
       );
   });
 
@@ -168,157 +172,161 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
   var scrollIconsTween = new TimelineMax();
 
   scrollIconsTween
-    .addLabel('group-1')
-    .to(document.querySelector('.js-icon-network'), 1, {
-      ease: Expo.easeOut,
-      x: -400,
-      y: 300,
-      opacity: 0,
-    })
+    .addLabel('start')
+    .to(
+      document.querySelector('.js-icon-network'),
+      1,
+      {
+        ease: Expo.easeIn,
+        x: -400,
+        y: 300,
+        opacity: 0,
+      },
+      'start += 0.1'
+    )
     .to(
       document.querySelector('.js-icon-world'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: -400,
         y: 100,
         opacity: 0,
       },
-      'group-1'
+      'start += 0.2'
     )
     .to(
       document.querySelector('.js-icon-mobile'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: -400,
         y: -100,
         opacity: 0,
       },
-      'group-1'
+      'start += 0.1'
     )
     .to(
       document.querySelector('.js-icon-twitter'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: -400,
         y: 400,
         opacity: 0,
       },
-      'group-1'
+      'start +=0.2'
     )
     .to(
       document.querySelector('.js-icon-folder'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 0,
         y: 400,
         opacity: 0,
       },
-      'group-1'
+      'start +=0.1'
     )
-    .addLabel('group-2')
     .to(
       document.querySelector('.js-icon-github'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 0,
         y: -400,
         opacity: 0,
       },
-      'group-2'
+      'start += 0.1'
     )
     .to(
       document.querySelector('.js-icon-like'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 0,
         y: -400,
         opacity: 0,
       },
-      'group-2'
+      'start += 0.2'
     )
     .to(
       document.querySelector('.js-icon-robot'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 0,
         y: -400,
         opacity: 0,
       },
-      'group-2'
+      'start += 0.3'
     )
     .to(
       document.querySelector('.js-icon-cart'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 100,
         y: 400,
         opacity: 0,
       },
-      'group-2'
+      'start += 0.1'
     )
     .addLabel('group-3')
     .to(
       document.querySelector('.js-icon-telegram'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 200,
         y: -400,
         opacity: 0,
       },
-      'group-3'
+      'start += 0.2'
     )
     .to(
       document.querySelector('.js-icon-letter'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 200,
         y: 400,
         opacity: 0,
       },
-      'group-3'
+      'start += 0.4'
     )
     .to(
       document.querySelector('.js-icon-cup'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 400,
         y: -400,
         opacity: 0,
       },
-      'group-3'
+      'start += 0.3'
     )
     .to(
       document.querySelector('.js-icon-google'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 400,
         y: 400,
         opacity: 0,
       },
-      'group-3'
+      'start += 0.5'
     )
     .to(
       document.querySelector('.js-icon-facebook'),
       1,
       {
-        ease: Expo.easeOut,
+        ease: Expo.easeIn,
         x: 400,
         y: 200,
         opacity: 0,
       },
-      'group-3'
+      'start += 0.2'
     );
 
   new ScrollMagic.Scene({
