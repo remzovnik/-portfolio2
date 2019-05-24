@@ -12,6 +12,11 @@
   margin-left: 30%;
 }
 
+@for $i from 1 through 3 {
+  .contacts__item:nth-child(#{$i}) {
+    margin-left: $i * 30px;
+  }
+}
 .contacts__item {
   margin-bottom: 20px;
 }

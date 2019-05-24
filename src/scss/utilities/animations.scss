@@ -33,3 +33,15 @@
     transform: scale(1);
   }
 }
+
+@keyframes eye-moving {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+}

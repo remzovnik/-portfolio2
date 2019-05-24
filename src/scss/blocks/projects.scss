@@ -1,8 +1,10 @@
 .projects {
-  margin-bottom: 200px;
+  padding: 100px 0 100px;
+  margin-bottom: 100px;
+  transition: background-color 1s;
 }
 
-.projects__section-title {
+.projects__section-title-row {
   margin-bottom: 110px;
   text-align: center;
 }

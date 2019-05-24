@@ -15,9 +15,8 @@
 
     element.addEventListener('mouseleave', () => {
       if (element.opened !== true) {
-        element.querySelector(
-          '.js-project-img'
-        ).style.clipPath = `circle(35% at 50% 50%)`;
+        element.querySelector('.js-project-img').style.clipPath =
+          'circle(35% at 50% 50%)';
       }
     });
   });

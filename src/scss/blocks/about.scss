@@ -1,9 +1,9 @@
 .about {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 
 .about__section-title {
-  margin-bottom: 60px;
+  margin-right: 30px;
 }
 
 .about__inner {
@@ -13,21 +13,36 @@
 
 .about__face {
   position: relative;
-  flex-basis: 360px;
+  width: 360px;
+  height: 360px;
+  min-width: 360px;
   margin-right: 90px;
 }
 
 .about__serious-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
 }
 
 .about__fun-photo {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
 }
 
-.about__bubble {
+.about__xoxo {
   position: absolute;
-  top: 40%;
-  left: 60%;
+  top: 250px;
+  left: 250px;
 }
 
 .about__text {
@@ -38,6 +53,7 @@
 
 .about__love {
   position: relative;
+  margin-right: 3px;
   cursor: pointer;
   &::before {
     content: '';

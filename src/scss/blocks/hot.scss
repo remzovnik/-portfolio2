@@ -1,0 +1,61 @@
+.hot {
+  width: 75px;
+  height: 115px;
+  margin-left: 40px;
+  fill: #ffd530;
+  fill-rule: nonzero;
+}
+
+.hot__stroke {
+  fill: #fff;
+}
+
+.hot__text {
+  fill: #000;
+}
+
+.hot__particles {
+  fill: #000;
+}
+
+.hot__spark-1 {
+  animation: spark-flying-1 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.hot__spark-2 {
+  animation: spark-flying-2 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.hot__spark-3 {
+  animation: spark-flying-3 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@keyframes spark-flying-1 {
+  90% {
+    transform: translate(10px, -30px);
+  }
+  100% {
+    transform: translate(10px, -30px);
+    opacity: 0;
+  }
+}
+
+@keyframes spark-flying-2 {
+  90% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+}
+
+@keyframes spark-flying-3 {
+  90% {
+    transform: translateY(-30px) rotate(-10deg);
+  }
+  100% {
+    transform: translateY(-30px) rotate(-10deg);
+    opacity: 0;
+  }
+}

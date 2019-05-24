@@ -2,38 +2,33 @@
   @include reset-btn;
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 0;
   z-index: 2;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 15px;
   background-color: #fff;
-  clip-path: circle(60% at 50% 0%);
-  cursor: pointer;
+  clip-path: circle(90% at 0% 0%);
   &.active {
   }
 }
 
 .btn-menu__line {
-  width: 36px;
-  height: 5px;
+  width: 30px;
+  height: 3px;
   background-color: #131313;
 }
 
 .btn-menu__line-1 {
-  position: absolute;
-  top: 5px;
-  left: 30px;
+  margin-bottom: 4px;
 }
 
 .btn-menu__line-2 {
-  position: absolute;
-  top: 13px;
-  left: 30px;
+  margin-bottom: 4px;
 }
 
 .btn-menu__line-3 {
-  position: absolute;
-  top: 21px;
-  left: 30px;
 }
