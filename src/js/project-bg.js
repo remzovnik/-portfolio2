@@ -3,7 +3,6 @@
   var projectSection = document.querySelector('.js-projects');
 
   window.addEventListener('DOMContentLoaded', () => {
-    console.log(projectTitles);
     projectSection.style.backgroundColor = projectTitles[0].getAttribute(
       'data-bg-color'
     );

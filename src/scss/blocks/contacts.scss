@@ -1,24 +1,38 @@
 .contacts {
-  margin-bottom: 160px;
+  padding: 100px 0;
+  margin-bottom: 50px;
 }
 
 .contacts__section-title {
-  margin-bottom: 95px;
   text-align: center;
+}
+
+.contacts__section-title-row {
+  justify-content: center;
+  margin-bottom: 95px;
+}
+
+.contacts__yeah {
+  margin-left: 30px;
 }
 
 .contacts__list {
   @include reset-list;
   margin-left: 30%;
+  @media (max-width: $breakpoint-medium) {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 @for $i from 1 through 3 {
   .contacts__item:nth-child(#{$i}) {
     margin-left: $i * 30px;
+    margin-bottom: 20px;
+    @media (max-width: $breakpoint-small) {
+      margin-left: 0;
+    }
   }
-}
-.contacts__item {
-  margin-bottom: 20px;
 }
 
 .contacts__link {
@@ -33,4 +47,7 @@
 .contacts__tag {
   color: #c62336;
   font-size: 18px;
+  @media (max-width: $breakpoint-small) {
+    font-size: 13px;
+  }
 }

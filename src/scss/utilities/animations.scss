@@ -45,3 +45,12 @@
     transform: translateX(-5px);
   }
 }
+
+@keyframes border-blinking {
+  0% {
+    border-right-color: #fff;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}

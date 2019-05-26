@@ -1,5 +1,9 @@
 .about {
-  margin-bottom: 200px;
+  padding: 100px 0;
+  margin-bottom: 100px;
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 50px;
+  }
 }
 
 .about__section-title {
@@ -9,6 +13,9 @@
 .about__inner {
   display: flex;
   align-items: flex-start;
+  @media (max-width: $breakpoint-medium) {
+    flex-direction: column;
+  }
 }
 
 .about__face {
@@ -17,6 +24,9 @@
   height: 360px;
   min-width: 360px;
   margin-right: 90px;
+  @media (max-width: $breakpoint-medium) {
+    order: 2;
+  }
 }
 
 .about__serious-photo {
@@ -45,6 +55,13 @@
   left: 250px;
 }
 
+.about__info {
+  @media (max-width: $breakpoint-medium) {
+    order: 1;
+    margin-bottom: 30px;
+  }
+}
+
 .about__text {
   color: #fff;
   font-size: 18px;
@@ -54,7 +71,6 @@
 .about__love {
   position: relative;
   margin-right: 3px;
-  cursor: pointer;
   &::before {
     content: '';
     position: absolute;
@@ -73,3 +89,10 @@
   fill: #c62336;
   animation: heart-beating 1.25s linear infinite;
 }
+
+// .about__animations {
+//   padding: 10px 0;
+//   span {
+//     display: inline-block;
+//   }
+// }

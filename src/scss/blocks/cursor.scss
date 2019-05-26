@@ -1,0 +1,18 @@
+.cursor {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(249, 208, 47, 1);
+  transition: background-color 0.25s, transform 0.25s;
+  &.is-hovering {
+    background-color: rgba(249, 208, 47, 0.7);
+    transform: scale(2);
+    transition: background-color 0.25s, transform 0.25s;
+  }
+  @media (max-width: $breakpoint-medium) {
+    display: none;
+  }
+}

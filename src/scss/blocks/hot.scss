@@ -4,6 +4,9 @@
   margin-left: 40px;
   fill: #ffd530;
   fill-rule: nonzero;
+  @media (max-width: $breakpoint-small) {
+    margin-left: 10px;
+  }
 }
 
 .hot__stroke {

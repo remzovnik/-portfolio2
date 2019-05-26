@@ -19,27 +19,39 @@
       animation: eye-moving 2s 0.75s infinite;
     }
   }
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+  }
 }
 
 .project__img-container {
   position: relative;
-  flex-basis: 790px;
+  width: 790px;
   height: 0;
   box-sizing: border-box;
   padding-top: 55.5%;
   margin-right: 15px;
+  @media (max-width: $breakpoint-small) {
+    width: 280px;
+    height: 280px;
+    padding-top: 0;
+    border-radius: 50%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .project__img {
   clip-path: circle(35% at 50% 50%);
   transition: clip-path 0.25s;
+  @media (max-width: $breakpoint-small) {
+    clip-path: none;
+  }
 }
 
-.project__link {
-  @include reset-link;
-  display: block;
-  flex-basis: 290px;
-  cursor: tiper;
+.project__rightside {
+  width: 290px;
+  min-width: 290px;
 }
 
 .project__title {
@@ -47,6 +59,9 @@
   color: #fff;
   font-size: 42px;
   font-weight: 700;
+  @media (max-width: $breakpoint-small) {
+    text-align: center;
+  }
 }
 
 .project__pics {

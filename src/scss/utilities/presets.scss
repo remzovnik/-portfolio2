@@ -2,14 +2,21 @@
   outline-color: #aacaee;
 }
 
+a,
 input,
 textarea,
 select,
 button {
   appearance: none;
   font-family: inherit;
-}
-
-button {
-  cursor: pointer;
+  // cursor: none;
+  // &:hover {
+  //   cursor: none;
+  // }
+  @media (max-width: $breakpoint-medium) {
+    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

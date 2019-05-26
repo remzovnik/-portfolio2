@@ -1,0 +1,11 @@
+.menu-substrate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f9d02f;
+  transform: scale(0);
+}

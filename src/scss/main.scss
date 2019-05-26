@@ -3,6 +3,7 @@
 @import 'utilities/mixins';
 @import 'utilities/fonts';
 @import 'utilities/presets';
+@import 'utilities/plugins';
 
 @import 'blocks/page-wrapper';
 @import 'blocks/page';
@@ -21,3 +22,7 @@
 @import 'blocks/hot';
 @import 'blocks/eye';
 @import 'blocks/link-arrow';
+@import 'blocks/hamburger';
+@import 'blocks/menu-subsrate';
+@import 'blocks/cursor';
+@import 'blocks/thanks';

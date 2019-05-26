@@ -1,8 +1,6 @@
 .btn-menu {
   @include reset-btn;
-  position: fixed;
-  top: 0;
-  left: 0;
+
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -10,9 +8,17 @@
   height: 80px;
   box-sizing: border-box;
   padding: 15px;
-  background-color: #fff;
+
   clip-path: circle(90% at 0% 0%);
-  &.active {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
   }
 }
 

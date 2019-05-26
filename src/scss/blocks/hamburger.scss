@@ -1,0 +1,28 @@
+.hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 12px;
+  color: #fff;
+  clip-path: circle(90% at 0% 0%);
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+  &:hover {
+    opacity: 1;
+  }
+  &.is-active:hover {
+    opacity: 1;
+  }
+}

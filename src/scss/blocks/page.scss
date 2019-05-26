@@ -1,3 +1,15 @@
 .page {
   background: #131313;
+  // cursor: none;
+  &.menu-is-opened {
+    .cursor {
+      background-color: rgba(103, 42, 160, 1);
+    }
+    .cursor.is-hovering {
+      background-color: rgba(103, 42, 160, 0.7);
+    }
+  }
+  @media (max-width: $breakpoint-medium) {
+    cursor: pointer;
+  }
 }

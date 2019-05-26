@@ -11,25 +11,29 @@
 
 <body class="page">
   <div class="page-wrapper">
-    <button class="btn-menu js-btn-menu" data-uk-toggle="target: .js-btn-menu, .js-menu; cls: active">
-      <span class="btn-menu__line btn-menu__line-1"></span>
-      <span class="btn-menu__line btn-menu__line-2"></span>
-      <span class="btn-menu__line btn-menu__line-3"></span>
+
+    <button class="hamburger hamburger--elastic js-btn-menu" type="button"
+      data-uk-toggle="target: .js-btn-menu; cls: is-active" aria-label="Кнопка меню" aria-controls="navigation"
+      aria-expanded="true/false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
     </button>
+    <div class="menu-substrate js-menu-substrate"></div>
     <nav class="menu js-menu">
       <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#" data-uk-scroll>
+        <li class="menu__item js-menu-item">
+          <a class="menu__link" href="#about" data-uk-scroll="offset: 0">
             Обо мне
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" data-uk-scroll>
+        <li class="menu__item js-menu-item">
+          <a class="menu__link" href="#projects" data-uk-scroll="offset: 0">
             Мои работы
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" data-uk-scroll>
+        <li class="menu__item js-menu-item">
+          <a class="menu__link" href="#contacts" data-uk-scroll="offset: 0">
             Контакты
           </a>
         </li>
@@ -37,7 +41,7 @@
     </nav>
     <header class="intro">
       <div class="uk-container">
-        <h1 class="intro__title js-page-title">Hello, World!</h1>
+        <h1 class="intro__title js-page-title js-hello"></h1>
         <svg class="intro__icon intro__icon-network js-icon-network">
           <use xlink:href="../img/sprite.svg#icon-network" />
         </svg>
@@ -82,7 +86,7 @@
         </svg>
       </div>
     </header>
-    <section class="about js-about">
+    <section class="about js-about" id="about">
       <div class="uk-container">
         <div class="about__inner">
           <div class="about__face">
@@ -90,7 +94,7 @@
             <img class="about__fun-photo js-about-face-fun" src="img/face2.png?6241a0341afeac86078d211e076554d1" alt="My fun face">
             <img class="about__xoxo js-xoxo" src="img/xoxo.svg?878466f048046474b6e5e41cee566e09" alt="hoho">
           </div>
-          <div>
+          <div class="about__info">
             <div class="projects__section-title-row  section-title-row">
               <h2 class="section-title js-about-title">
                 Обо мне
@@ -120,16 +124,18 @@
                 HTML5, CSS3, JS, SASS, SVG, UIkit , Bootstrap, Git, Webpack, GSAP и немного Vue
               </p>
               <p>
-                А ещё я люблю анимации...
+                А ещё мне нравятся анимации...
               </p>
+              <!-- <div class="about__animations js-about-animations">
+                <span>А</span><span>&nbsp;</span><span>е</span><span>щ</span><span>ё</span><span>&nbsp;</span><span>я</span><span>&nbsp;</span><span>л</span><span>ю</span><span>б</span><span>л</span><span>ю</span><span>&nbsp;</span><span>а</span><span>н</span></span><span>и</span><span>м</span><span>а</span><span>ц</span><span>и</span><span>и</span><span>.</span><span>.</span><span>.</span>
+              </div> -->
             </div>
           </div>
         </div>
-      </div>
     </section>
-    <section class="projects js-projects">
+    <section class="projects js-projects" id="projects">
       <div class="uk-container uk-container-large">
-        <div class="section-title-row section-title-row_projects">
+        <div class="projects__section-title-row section-title-row">
           <h2 class="section-title js-projects-title">
             Мои недавние проекты
           </h2>
@@ -190,7 +196,7 @@
                 <span class="project__img-container uk-cover-container js-project-img-container">
                   <img class="project__img js-project-img" data-uk-cover src="img/avsweb.jpg?3fcfb059db7b63eb88d6d5d9ebc8d349">
                 </span>
-                <span>
+                <span class="project__rightside">
                   <h3 class="project__title">
                     avsweb.ru
                   </h3>
@@ -209,9 +215,7 @@
                       </g>
                       <path class="eye__eyelid"
                         d="M13.174 29.136c2.767.329 5.1-1.577 7.374-2.919a65.707 65.707 0 0 1 9.629-4.96 54.276 54.276 0 0 1 18.663-3.6c13.639-.142 26.034 8.483 36.5 16.231 2.685 1.986 5.388-2.53 2.649-4.474-11.131-7.9-25.019-15.561-39.152-15.349a58.2 58.2 0 0 0-19.611 3.8 51.876 51.876 0 0 0-9.288 4.884c-2.445 1.553-5.88 3.015-7.166 5.7a.463.463 0 0 0 .4.685zm-.329-.073c1.808 4.736 6.725 6.447 11.012 8.462a65.988 65.988 0 0 0 17.563 5.563 67.2 67.2 0 0 0 25.051-.572A81.424 81.424 0 0 0 78.6 38.833c3.186-1.226 9.249-2.463 9.938-6.243a1.874 1.874 0 0 0-.849-2.059c-3.307-1.734-6.951 1.242-10.055 2.521a82.31 82.31 0 0 1-11.521 3.824 60.921 60.921 0 0 1-24.541.981c-5.468-.9-10.279-2.744-15.455-4.573-2.3-.814-4.591-1.637-6.859-2.533-2.043-.808-3.756-1.964-5.993-2.235a.436.436 0 0 0-.422.547zM49.917 11.3a19.891 19.891 0 0 0 .943-4.6c.1-1.168.37-2.634-.511-3.547a.491.491 0 0 0-.577-.074c-1.153.621-1.135 2.158-1.189 3.323a19.716 19.716 0 0 0 .4 4.9.492.492 0 0 0 .937 0zM43 11.449a15.228 15.228 0 0 0-.245-4.534c-.179-1.168-.188-2.647-1.289-3.34a.445.445 0 0 0-.53.067c-.957 1-.475 2.615-.2 3.823a9.546 9.546 0 0 0 1.834 4.161c.153.193.406.006.431-.176zm-7.535 1.613c-.376-2.57-1.639-4.666-2.331-7.136a.928.928 0 0 0-1.769 0c-.346 1.386.314 2.539.946 3.75a17.186 17.186 0 0 0 2.553 3.731.362.362 0 0 0 .6-.346zm-8.243 2.044a9.916 9.916 0 0 0-1.275-4.21 23.843 23.843 0 0 0-2.2-3.138.371.371 0 0 0-.509 0c-2.442 2 2.056 6.012 2.974 7.769.314.6 1.089.139 1.012-.421zm-7.407 3.835a4.646 4.646 0 0 0-1.14-3.44 25.353 25.353 0 0 0-2.732-3.212.464.464 0 0 0-.716.09c-1.607 2.937 3.07 4.688 4.19 6.669a.216.216 0 0 0 .4-.107zM12.66 24.1c.571-2.72-2.794-5.41-5.279-5.563A.379.379 0 0 0 7 18.91c.176 1.383 1.356 1.988 2.426 2.729 1.089.755 1.932 1.792 3.005 2.551a.156.156 0 0 0 .229-.09zM57.2 11.753a15.98 15.98 0 0 0 .991-3.888 6.339 6.339 0 0 0 .078-3.642.338.338 0 0 0-.553-.144 5.219 5.219 0 0 0-1.35 3.421 10.413 10.413 0 0 0 0 4.15.464.464 0 0 0 .835.107zm6.595 2.009a19.07 19.07 0 0 1 1.852-2.2 10.547 10.547 0 0 0 1.593-2.429c.308-.721.605-2.524-.644-2.561a1.832 1.832 0 0 0-1.368 1.164c-.458.823-.861 1.672-1.332 2.493-.521.906-1.81 2.815-.646 3.675a.4.4 0 0 0 .545-.141zm6.668 3a7.557 7.557 0 0 0 2.8-2.655c.77-.975 1.882-2.136 1.756-3.458a.576.576 0 0 0-.572-.566c-1.388.166-2.206 1.355-2.935 2.429-.761 1.122-1.668 2.465-1.548 3.87a.4.4 0 0 0 .5.379zm6.491 3.521a45.688 45.688 0 0 1 3.646-3.548c.943-.9 2.636-2.143 2.352-3.6a.4.4 0 0 0-.285-.282c-1.61-.258-2.983 1.734-3.925 2.769a9.8 9.8 0 0 0-2.66 4.153.528.528 0 0 0 .877.5zm6.328 3.881c1.108-1.094 2.471-2 3.635-3.042 1.077-.969 2.411-1.883 2.829-3.32a.547.547 0 0 0-.67-.66c-1.672.334-2.914 1.983-4.013 3.163-.949 1.017-2.253 2.2-2.229 3.676a.265.265 0 0 0 .447.182zm5.554 4.1c2.041-1.252 4.727-2.272 6.1-4.307a.463.463 0 0 0-.4-.692c-2.618.021-4.826 2.212-6.55 3.915a.7.7 0 0 0 .849 1.085zM22.512 39.887a7.763 7.763 0 0 0-2.989 1.877c-.79.78-1.792 1.823-1.449 3.009a1.078 1.078 0 0 0 1.774.462 15.317 15.317 0 0 0 1.568-2.219c.575-.78 1.169-1.536 1.711-2.34a.544.544 0 0 0-.614-.789zM49.525 45.9c-.3 1.161-1.977 5.864.3 6.1 2.357.242 1.262-4.773 1.128-5.907a.734.734 0 0 0-1.431-.191zm25.262-2.437c.74 1.229 1.44 2.483 2.166 3.722.394.675 1.43 2.087 2.384 1.408 1.057-.752.218-2.435-.288-3.221a8.787 8.787 0 0 0-3.2-2.959.778.778 0 0 0-1.063 1.05z" />
-
                     </svg>
-
                   </span>
                 </span>
               </a>
@@ -221,7 +225,7 @@
                 <span class="project__img-container uk-cover-container js-project-img-container">
                   <img class="project__img js-project-img" data-uk-cover src="img/collant-love.jpg?3e2fc9f5a5eb2c2876aa3d7806b29880">
                 </span>
-                <span>
+                <span class="project__rightside">
                   <h3 class="project__title">
                     avsweb.ru
                   </h3>
@@ -380,12 +384,14 @@
         </div>
       </div>
     </section>
-    <section class="contacts js-contacts">
+    <section class="contacts js-contacts" id="contacts">
       <div class="uk-container">
-        <h2 class="contacts__section-title section-title js-contacts-title">
-          Есть работа?
+        <div class="contacts__section-title-row section-title-row">
+          <h2 class="contacts__section-title section-title js-contacts-title">
+            Есть работа?
+          </h2>
           <img class="contacts__yeah js-yeah" src="img/yeah.svg?e625a31fe9555b35a615243a6949b936">
-        </h2>
+        </div>
         <ul class="contacts__list">
           <li class="contacts__item js-contacts-item">
             <a class="contacts__link" href="tel:+79515482773">
@@ -411,7 +417,31 @@
         </ul>
       </div>
     </section>
-    <a class="restart" href="#" data-uk-scroll>
+    <div class="thanks">
+      <div class="uk-container">
+        <span>С</span>
+        <span>п</span>
+        <span>а</span>
+        <span>с</span>
+        <span>и</span>
+        <span>б</span>
+        <span>о</span>
+        <span></span>
+        <span>з</span>
+        <span>а</span>
+        <span></span>
+        <span>п</span>
+        <span>р</span>
+        <span>о</span>
+        <span>с</span>
+        <span>м</span>
+        <span>о</span>
+        <span>т</span>
+        <span>р</span>
+        <span>!</span>
+      </div>
+    </div>
+    <a class="restart js-restart" href="#" data-uk-scroll>
       <svg class="restart__circle" viewBox="0 0 171 159">
         <defs>
           <path id="restart-circle"
@@ -429,6 +459,7 @@
       </svg>
     </a>
   </div>
+  <div class="cursor js-cursor"></div>
 </body>
 <script src="../bundle.js">
 </script>

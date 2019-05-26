@@ -1,7 +1,18 @@
 .section-title {
   margin: 0;
+  text-align: left;
   color: #fff;
   font-size: 100px;
   font-weight: 700;
   line-height: 0.7;
+  @media (max-width: $breakpoint-large) {
+    font-size: 90px;
+  }
+  @media (max-width: $breakpoint-medium) {
+    font-size: 65px;
+  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 40px;
+    line-height: 1;
+  }
 }
