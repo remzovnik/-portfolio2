@@ -66,6 +66,7 @@ import TweenMax from 'gsap/src/uncompressed/TweenMax';
     element.addEventListener('click', () => {
       menuCloseTween.play(0);
       menu.isActive = false;
+      btnMenu.classList.remove('is-active');
     });
   });
 })();

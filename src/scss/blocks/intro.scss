@@ -5,8 +5,8 @@
   justify-content: center;
   min-height: 100vh;
   margin-bottom: 150px;
-  @media (max-width: $breakpoint-small) {
-    margin-bottom: 50px;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 0;
   }
 }
 
@@ -63,7 +63,7 @@
 }
 
 .intro__icon-folder {
-  top: 64%;
+  top: 72%;
   left: 30%;
 }
 
@@ -94,7 +94,7 @@
 
 .intro__icon-letter {
   top: 65%;
-  left: 59%;
+  left: 56%;
 }
 
 .intro__icon-cup {
@@ -110,4 +110,9 @@
 .intro__icon-facebook {
   top: 25%;
   left: 80%;
+}
+
+.intro__icon-cloud {
+  top: 65%;
+  left: 85%;
 }

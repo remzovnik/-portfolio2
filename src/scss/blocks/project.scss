@@ -13,7 +13,7 @@
     }
     .project__eye {
       opacity: 1;
-      transition: opacity 1s 0.5s;
+      transition: opacity 1s 0.25s;
     }
     .project__eyeball {
       animation: eye-moving 2s 0.75s infinite;
@@ -21,12 +21,27 @@
   }
   @media (max-width: $breakpoint-small) {
     flex-direction: column;
+    .project__arrow-base {
+      transform: scaleX(3);
+      transition: transform 0.25s;
+    }
+    .project__arrow-tip {
+      transform: translateX(120px);
+      transition: transform 0.25s;
+    }
+    .project__eye {
+      opacity: 1;
+      transition: opacity 1s 0.25s;
+    }
+    .project__eyeball {
+      animation: eye-moving 2s 0.75s infinite;
+    }
   }
 }
 
 .project__img-container {
   position: relative;
-  width: 790px;
+  flex-grow: 1;
   height: 0;
   box-sizing: border-box;
   padding-top: 55.5%;
@@ -52,6 +67,10 @@
 .project__rightside {
   width: 290px;
   min-width: 290px;
+  @media (max-width: $breakpoint-large) {
+    width: 200px;
+    min-width: 200px;
+  }
 }
 
 .project__title {

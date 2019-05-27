@@ -164,6 +164,17 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
           opacity: 0,
         },
         'start += 0.2'
+      )
+      .from(
+        document.querySelector('.js-icon-cloud'),
+        1,
+        {
+          ease: Expo.easeOut,
+          x: 400,
+          y: 300,
+          opacity: 0,
+        },
+        'start += 0.6'
       );
   });
 
@@ -327,6 +338,17 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
         opacity: 0,
       },
       'start += 0.2'
+    )
+    .to(
+      document.querySelector('.js-icon-cloud'),
+      1,
+      {
+        ease: Expo.easeIn,
+        x: 400,
+        y: 300,
+        opacity: 0,
+      },
+      'start += 0.3'
     );
 
   new ScrollMagic.Scene({

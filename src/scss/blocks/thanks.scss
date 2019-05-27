@@ -1,41 +1,43 @@
 .thanks {
-  margin-bottom: 100px;
+  margin-bottom: 45px;
   text-align: center;
-  font-size: 50px;
-
+  font-size: 40px;
   span {
     display: inline-block;
     animation: float 0.2s ease-in-out infinite;
   }
-
   &:hover span {
     animation: bounce 0.6s;
   }
-
-  span:nth-child(4n) {
-    color: hsl(50, 75%, 55%);
-    text-shadow: 1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%),
-      3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%);
+  span:nth-of-type(3n) {
+    color: hsl(172, 100%, 64%);
+    text-shadow: 1px 1px hsl(172, 100%, 40%), 2px 2px hsl(172, 100%, 40%),
+      3px 3px hsl(172, 100%, 40%), 4px 4px hsl(172, 100%, 40%);
   }
-  span:nth-child(4n-1) {
-    color: hsl(135, 35%, 55%);
-    text-shadow: 1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%),
-      3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%);
+  span:nth-of-type(3n-1) {
+    color: hsl(287, 100%, 62%);
+    text-shadow: 1px 1px hsl(287, 100%, 40%), 2px 2px hsl(287, 100%, 40%),
+      3px 3px hsl(287, 100%, 40%), 4px 4px hsl(287, 100%, 40%);
   }
-  span:nth-child(4n-2) {
-    color: hsl(155, 35%, 60%);
-    text-shadow: 1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%),
-      3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%);
+  span:nth-of-type(3n-2) {
+    color: hsl(48, 100%, 60%);
+    text-shadow: 1px 1px hsl(48, 100%, 45%), 2px 2px hsl(48, 100%, 45%),
+      3px 3px hsl(48, 100%, 45%), 4px 4px hsl(48, 100%, 45%);
   }
-  span:nth-child(4n-3) {
-    color: hsl(30, 65%, 60%);
-    text-shadow: 1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%),
-      3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%);
-  }
-
   @for $i from 1 through 20 {
-    & span:nth-child(#{$i}) {
+    & span:nth-of-type(#{$i}) {
       animation-delay: 0.05s * $i;
+    }
+  }
+  br {
+    display: none;
+  }
+  @media (max-width: $breakpoint-medium) {
+    font-size: 35px;
+  }
+  @media (max-width: $breakpoint-small) {
+    br {
+      display: inline;
     }
   }
 }
